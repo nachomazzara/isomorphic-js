@@ -3,7 +3,7 @@ export default async function rootMiddleware (ctx, next) {
     await next() // next is now a function
   } catch (err) {
     console.log(err)
-    let message = ""; // normalize message if fail on http request
+    let message = "" // normalize message if fail on http request
     if(err.response && err.response.statusText){
       message = {message : err.response.statusText}
     }

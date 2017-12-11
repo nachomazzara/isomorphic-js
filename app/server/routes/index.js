@@ -5,4 +5,4 @@ const router = combineRouters([
   twitRouter,
 ])
 
-export default router;
+export default router
