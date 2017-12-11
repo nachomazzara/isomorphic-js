@@ -32,4 +32,4 @@ yarn run test
 
 ### TODO: 
 -   React router navigation with SSR (now I'm using `window.location.href`)
--   Test Asyn/Await controllers
+-   Test Asyn/Await controllers step by step
