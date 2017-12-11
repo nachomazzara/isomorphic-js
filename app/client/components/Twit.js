@@ -38,6 +38,7 @@ const remove = {
   'padding': '5px 20px',
   'borderRadius': '5px',
   'background': 'transparent',
+  'cursor': 'pointer',
 }
 
 export default class Twit extends Component {
