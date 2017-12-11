@@ -1,0 +1,678 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render Empty List of twits for route / 1`] = `
+<StaticRouter
+  basename=""
+  context={Object {}}
+  location="/"
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <App
+      twits={Array []}
+    >
+      <div
+        style={
+          Object {
+            "fontFamily": "Roboto",
+            "margin": "auto",
+            "maxWidth": "1200px",
+            "width": "100%",
+          }
+        }
+      >
+        <Switch>
+          <Route
+            computedMatch={
+              Object {
+                "isExact": true,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+              }
+            }
+            path="/"
+            render={[Function]}
+          >
+            <TwitList
+              location={
+                Object {
+                  "history": Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  },
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                  },
+                  "match": Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  },
+                  "staticContext": Object {},
+                }
+              }
+              twits={Array []}
+            >
+              <div
+                style={
+                  Object {
+                    "marginTop": "30px",
+                  }
+                }
+              >
+                <input
+                  onChange={[Function]}
+                  placeholder="Enter Search Criteria"
+                  type="text"
+                  value=""
+                />
+                <button
+                  onClick={[Function]}
+                >
+                  Search
+                </button>
+                Enter  Search criteria in order to retrieve Twits
+              </div>
+            </TwitList>
+          </Route>
+        </Switch>
+      </div>
+    </App>
+  </Router>
+</StaticRouter>
+`;
+
+exports[`App should render List of twits for route / 1`] = `
+<StaticRouter
+  basename=""
+  context={Object {}}
+  location="/"
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <App
+      twits={
+        Array [
+          Object {
+            "id_str": 1234,
+            "user": Object {},
+          },
+          Object {
+            "id_str": 5678,
+            "user": Object {},
+          },
+        ]
+      }
+    >
+      <div
+        style={
+          Object {
+            "fontFamily": "Roboto",
+            "margin": "auto",
+            "maxWidth": "1200px",
+            "width": "100%",
+          }
+        }
+      >
+        <Switch>
+          <Route
+            computedMatch={
+              Object {
+                "isExact": true,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+              }
+            }
+            path="/"
+            render={[Function]}
+          >
+            <TwitList
+              location={
+                Object {
+                  "history": Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  },
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                  },
+                  "match": Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  },
+                  "staticContext": Object {},
+                }
+              }
+              twits={
+                Array [
+                  Object {
+                    "id_str": 1234,
+                    "user": Object {},
+                  },
+                  Object {
+                    "id_str": 5678,
+                    "user": Object {},
+                  },
+                ]
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "marginTop": "30px",
+                  }
+                }
+              >
+                <input
+                  onChange={[Function]}
+                  placeholder="Enter Search Criteria"
+                  type="text"
+                  value=""
+                />
+                <button
+                  onClick={[Function]}
+                >
+                  Search
+                </button>
+                <ul>
+                  <li
+                    key="1234"
+                    style={
+                      Object {
+                        "listStyle": "none",
+                      }
+                    }
+                  >
+                     
+                    <Twit
+                      handleDelete={[Function]}
+                      twit={
+                        Object {
+                          "id_str": 1234,
+                          "user": Object {},
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "border": "3px solid #b9e0ff",
+                            "borderRadius": "10px",
+                            "display": "flex",
+                            "marginBottom": "30px",
+                            "padding": "15px",
+                          }
+                        }
+                      >
+                        <div>
+                          <img
+                            style={
+                              Object {
+                                "borderRadius": "50%",
+                                "height": "auto",
+                                "width": "50px",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "marginLeft": " 20px",
+                            }
+                          }
+                        >
+                          <span>
+                            <strong />
+                             @undefined
+                          </span>
+                          <p
+                            style={
+                              Object {
+                                "margin": "3px 0",
+                              }
+                            }
+                          />
+                          <a
+                            href="/twit/1234"
+                            style={
+                              Object {
+                                "color": "blue",
+                                "fontSize": "16px",
+                                "margin": "10px",
+                              }
+                            }
+                          >
+                             
+                            View
+                             
+                          </a>
+                          <button
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "background": "transparent",
+                                "border": "none",
+                                "fontSize": "16px",
+                                "margin": "10px 5px",
+                              }
+                            }
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      </div>
+                    </Twit>
+                     
+                  </li>
+                  <li
+                    key="5678"
+                    style={
+                      Object {
+                        "listStyle": "none",
+                      }
+                    }
+                  >
+                     
+                    <Twit
+                      handleDelete={[Function]}
+                      twit={
+                        Object {
+                          "id_str": 5678,
+                          "user": Object {},
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "border": "3px solid #b9e0ff",
+                            "borderRadius": "10px",
+                            "display": "flex",
+                            "marginBottom": "30px",
+                            "padding": "15px",
+                          }
+                        }
+                      >
+                        <div>
+                          <img
+                            style={
+                              Object {
+                                "borderRadius": "50%",
+                                "height": "auto",
+                                "width": "50px",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "marginLeft": " 20px",
+                            }
+                          }
+                        >
+                          <span>
+                            <strong />
+                             @undefined
+                          </span>
+                          <p
+                            style={
+                              Object {
+                                "margin": "3px 0",
+                              }
+                            }
+                          />
+                          <a
+                            href="/twit/5678"
+                            style={
+                              Object {
+                                "color": "blue",
+                                "fontSize": "16px",
+                                "margin": "10px",
+                              }
+                            }
+                          >
+                             
+                            View
+                             
+                          </a>
+                          <button
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "background": "transparent",
+                                "border": "none",
+                                "fontSize": "16px",
+                                "margin": "10px 5px",
+                              }
+                            }
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      </div>
+                    </Twit>
+                     
+                  </li>
+                </ul>
+              </div>
+            </TwitList>
+          </Route>
+        </Switch>
+      </div>
+    </App>
+  </Router>
+</StaticRouter>
+`;
+
+exports[`App should render Twit specific for route /twit/ID 1`] = `
+<StaticRouter
+  basename=""
+  context={Object {}}
+  location="/twit/1234"
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/twit/1234",
+          "search": "",
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <App
+      twits={
+        Array [
+          Object {
+            "id_str": 1234,
+            "user": Object {},
+          },
+        ]
+      }
+    >
+      <div
+        style={
+          Object {
+            "fontFamily": "Roboto",
+            "margin": "auto",
+            "maxWidth": "1200px",
+            "width": "100%",
+          }
+        }
+      >
+        <Switch>
+          <Route
+            computedMatch={
+              Object {
+                "isExact": false,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/twit/1234",
+                "search": "",
+              }
+            }
+            path="/"
+            render={[Function]}
+          >
+            <TwitList
+              location={
+                Object {
+                  "history": Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/twit/1234",
+                      "search": "",
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  },
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/twit/1234",
+                    "search": "",
+                  },
+                  "match": Object {
+                    "isExact": false,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  },
+                  "staticContext": Object {},
+                }
+              }
+              twits={
+                Array [
+                  Object {
+                    "id_str": 1234,
+                    "user": Object {},
+                  },
+                ]
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "marginTop": "30px",
+                  }
+                }
+              >
+                <input
+                  onChange={[Function]}
+                  placeholder="Enter Search Criteria"
+                  type="text"
+                  value=""
+                />
+                <button
+                  onClick={[Function]}
+                >
+                  Search
+                </button>
+                <ul>
+                  <li
+                    key="1234"
+                    style={
+                      Object {
+                        "listStyle": "none",
+                      }
+                    }
+                  >
+                     
+                    <Twit
+                      handleDelete={[Function]}
+                      twit={
+                        Object {
+                          "id_str": 1234,
+                          "user": Object {},
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "border": "3px solid #b9e0ff",
+                            "borderRadius": "10px",
+                            "display": "flex",
+                            "marginBottom": "30px",
+                            "padding": "15px",
+                          }
+                        }
+                      >
+                        <div>
+                          <img
+                            style={
+                              Object {
+                                "borderRadius": "50%",
+                                "height": "auto",
+                                "width": "50px",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "marginLeft": " 20px",
+                            }
+                          }
+                        >
+                          <span>
+                            <strong />
+                             @undefined
+                          </span>
+                          <p
+                            style={
+                              Object {
+                                "margin": "3px 0",
+                              }
+                            }
+                          />
+                          <a
+                            href="/twit/1234"
+                            style={
+                              Object {
+                                "color": "blue",
+                                "fontSize": "16px",
+                                "margin": "10px",
+                              }
+                            }
+                          >
+                             
+                            View
+                             
+                          </a>
+                          <button
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "background": "transparent",
+                                "border": "none",
+                                "fontSize": "16px",
+                                "margin": "10px 5px",
+                              }
+                            }
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      </div>
+                    </Twit>
+                     
+                  </li>
+                </ul>
+              </div>
+            </TwitList>
+          </Route>
+        </Switch>
+      </div>
+    </App>
+  </Router>
+</StaticRouter>
+`;

@@ -13,12 +13,12 @@ const appStyle = {
   width: '100%',
   maxWidth: '1200px',
   margin: 'auto',
+  fontFamily: 'Roboto',
 }
 
 export default function App (props) {
 
   const { twits } = props
-
   return (
     <div style={appStyle}>
       <Switch>

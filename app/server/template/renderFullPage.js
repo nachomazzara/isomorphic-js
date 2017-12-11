@@ -4,14 +4,9 @@ export default function renderFullPage(html, preloadedState) {
   <html>
   <head>
       <title>Your SSR React Router Node App initialised with data!</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
-  <button onClick='go()'>asdsadasdsadsadsa</button>
-  <script>
-    function go () {
-      window.location.href = '?apple'
-    }
-  </script>
   <div id="root">${html}</div>
   <script>
     window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}

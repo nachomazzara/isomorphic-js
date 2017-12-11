@@ -1,11 +1,11 @@
 import React from 'react'
-import { render } from 'react-dom'
+import { hydrate } from 'react-dom'
 import {BrowserRouter as Router } from 'react-router-dom'
 
 import App from './components/App';
 
-render((
+hydrate((
   <Router>
-    <App pokemon={window.__PRELOADED_STATE__}/>
+    <App twits={window.__PRELOADED_STATE__}/>
   </Router>
 ), document.getElementById('root'))

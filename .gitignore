@@ -1,6 +1,7 @@
 .DS_STORE
 node_modules
 build/
+app/server/_config.js
 remote-repo/
 coverage/
 .module-cache
